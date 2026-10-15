@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below. The accompanying paper is under review; a DOI will be added on publication."
+title: "crossborder-spacetime: space-time analysis of cross-border commuting across the Johor-Singapore Causeway"
+type: software
+version: 1.0.0
+date-released: 2026-10-15
+license: MIT
+repository-code: "https://github.com/malukawasaki/crossborder-spacetime"
+authors:
+  - given-names: Maria Luisa
+    family-names: Tarozzo Kawasaki
+  - given-names: Chen En
+    family-names: Lee
+  - given-names: Anders
+    family-names: Moeller
+  - given-names: Ellery Ngiap June
+    family-names: Tan
+keywords:
+  - cross-border commuting
+  - time poverty
+  - space-time geography
+  - smart card data
+  - Singapore
+  - Johor Bahru
