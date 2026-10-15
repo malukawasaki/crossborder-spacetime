@@ -1,0 +1,62 @@
+# Stylised commuter profiles derived from semi-structured interviews with cross-border commuters.
+# Profiles are composites: names, exact addresses and employers are removed, times are
+# rounded to typical values reported by respondents. Hours are decimal (7.5 = 07:30).
+# The raw interview material is not shared (see README, "Qualitative data").
+
+# Corridor nodes on the space-time axis: cumulative distance from home in km.
+corridor_km:
+  JB Home: 0.0
+  JB CIQ: 2.5
+  Woodlands Checkpoint: 3.56      # 1.06 km Causeway
+  Woodlands Ind Pk: 5.5
+  Kranji MRT: 8.0
+  Jurong East: 18.0
+  Orchard: 26.5
+  Raffles Place: 30.0
+
+# Typical segment durations (minutes) used to colour the Figure 2 lines.
+segment_minutes:
+  JB Home|JB CIQ: 15
+  JB CIQ|Woodlands Checkpoint: 90
+  Woodlands Checkpoint|Kranji MRT: 15
+  Kranji MRT|Orchard: 35
+
+# Figure 2: one representative office commuter (bus + MRT to Orchard).
+representative:
+  label: Representative commuter (office, Orchard)
+  waypoints:
+    - [JB Home, 5.5]
+    - [JB CIQ, 6.0]
+    - [Woodlands Checkpoint, 7.5]
+    - [Kranji MRT, 8.0]
+    - [Orchard, 8.9]
+    - [Orchard, 17.5]
+    - [Kranji MRT, 18.3]
+    - [Woodlands Checkpoint, 19.0]
+    - [JB CIQ, 20.8]
+    - [JB Home, 21.3]
+
+# Figure S4: four occupational profiles.
+profiles:
+  - label: "P1: office worker, Orchard (overtime)"
+    colour: "#dc2626"
+    style: "-"
+    waypoints: [[JB Home, 5.5], [JB CIQ, 6.0], [Woodlands Checkpoint, 7.5], [Kranji MRT, 8.0], [Orchard, 8.75],
+                [Orchard, 19.0], [Kranji MRT, 19.75], [Woodlands Checkpoint, 20.25], [JB CIQ, 21.5], [JB Home, 22.0]]
+  - label: "P2: service worker, Jurong East"
+    colour: "#2563eb"
+    style: "--"
+    waypoints: [[JB Home, 4.5], [JB CIQ, 5.0], [Woodlands Checkpoint, 6.5], [Kranji MRT, 7.0], [Jurong East, 7.75],
+                [Jurong East, 17.5], [Kranji MRT, 18.25], [Woodlands Checkpoint, 18.75], [JB CIQ, 20.0],
+                [JB Home, 20.5]]
+  - label: "P3: office worker, CBD"
+    colour: "#16a34a"
+    style: "-."
+    waypoints: [[JB Home, 5.0], [JB CIQ, 5.5], [Woodlands Checkpoint, 7.0], [Kranji MRT, 7.5], [Raffles Place, 8.5],
+                [Raffles Place, 17.5], [Kranji MRT, 18.5], [Woodlands Checkpoint, 19.0], [JB CIQ, 20.25],
+                [JB Home, 21.0]]
+  - label: "P4: wafer-fab shift worker, Woodlands"
+    colour: "#ea580c"
+    style: ":"
+    waypoints: [[JB Home, 5.0], [JB CIQ, 5.5], [Woodlands Checkpoint, 7.0], [Woodlands Ind Pk, 7.5],
+                [Woodlands Ind Pk, 19.5], [Woodlands Checkpoint, 20.0], [JB CIQ, 21.25], [JB Home, 22.0]]

@@ -1,0 +1,6 @@
+cluster,stops,trips,trips_per_month,share_of_onward_pct,weekday_am_peak_trips
+Kranji Loop / Kranji Way,49259 49149 49179,0,0.0,0.0,0
+Woodlands Ind Pk D / Kranji Lodge,46029 46039,117776,11777.6,2.2554484584372876,22695
+GlobalFoundries (Woodlands Rd),46059 46049 46041,32843,3284.3,0.6289540629708585,13510
+Woodlands Ave 3 (Marsiling),46541 46549,23396,2339.6,0.44804096024316314,3495
+Admiralty Rd West,47031 47029 47021,0,0.0,0.0,0
