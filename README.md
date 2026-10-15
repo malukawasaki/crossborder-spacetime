@@ -9,8 +9,8 @@ The analysis combines ten months of public transport smart-card aggregates from 
 Transport Authority of Singapore (**June 2025 – March 2026**) with interviews with
 cross-border commuters, visualised as Hägerstrand space-time lines.
 
-> **Citation.** The accompanying paper is under review. Until it is published, please cite
-> this repository (see [`CITATION.cff`](CITATION.cff)).
+> **Citation.** This repository accompanies *The 17-Hour Workday: Spatiotemporal Patterns of Cross-Border Labor across the Johor–Singapore Causeway* (Tarozzo Kawasaki, Lee, Moeller and Tan; under review).
+> A DOI will be added on publication; until then, please cite this repository (see [`CITATION.cff`](CITATION.cff)).
 
 ## Figure 1 — From the Causeway to the workplace
 

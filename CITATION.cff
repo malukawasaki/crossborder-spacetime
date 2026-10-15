@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite it as below. The accompanying paper is under review; a DOI will be added on publication."
+message: "If you use this code, please cite the accompanying paper (under review; a DOI will be added on publication) or this repository."
 title: "crossborder-spacetime: space-time analysis of cross-border commuting across the Johor-Singapore Causeway"
 type: software
 version: 1.0.0
@@ -22,3 +22,17 @@ keywords:
   - smart card data
   - Singapore
   - Johor Bahru
+preferred-citation:
+  type: article
+  title: "The 17-Hour Workday: Spatiotemporal Patterns of Cross-Border Labor across the Johor–Singapore Causeway"
+  status: submitted
+  year: 2026
+  authors:
+    - given-names: Maria Luisa
+      family-names: Tarozzo Kawasaki
+    - given-names: Chen En
+      family-names: Lee
+    - given-names: Anders
+      family-names: Moeller
+    - given-names: Ellery Ngiap June
+      family-names: Tan
