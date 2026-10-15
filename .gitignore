@@ -1,0 +1,18 @@
+# Raw LTA / URA data (not redistributed; see data/README.md)
+data/raw/
+*.gz
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
