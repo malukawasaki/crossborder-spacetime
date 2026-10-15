@@ -1,0 +1,31 @@
+gateway,destination,sector,trips,rank
+Kranji,Jurong East,Secondary Gateways,182861,1
+Kranji,Clementi,Secondary Gateways,95483,2
+Kranji,Bukit Batok,Secondary Gateways,89358,3
+Kranji,Boon Lay,Industrial West,85263,4
+Kranji,Ang Mo Kio,Northern & Central Heartlands,81694,5
+Kranji,Admiralty,Other,70258,6
+Kranji,Yishun,Northern & Central Heartlands,66504,7
+Kranji,Choa Chu Kang,Secondary Gateways,60941,8
+Kranji,Khatib,Northern & Central Heartlands,53716,9
+Kranji,Yio Chu Kang,Northern & Central Heartlands,52714,10
+Marsiling,Jurong East,Secondary Gateways,147021,1
+Marsiling,Admiralty,Other,129434,2
+Marsiling,Yishun,Northern & Central Heartlands,80921,3
+Marsiling,Sembawang,Northern & Central Heartlands,79310,4
+Marsiling,Yio Chu Kang,Northern & Central Heartlands,77064,5
+Marsiling,Ang Mo Kio,Northern & Central Heartlands,75282,6
+Marsiling,Clementi,Secondary Gateways,72321,7
+Marsiling,Choa Chu Kang,Secondary Gateways,65982,8
+Marsiling,Raffles Place,CBD & Civic Core,56377,9
+Marsiling,Bukit Batok,Secondary Gateways,53792,10
+Woodlands,Jurong East,Secondary Gateways,223011,1
+Woodlands,Choa Chu Kang,Secondary Gateways,122770,2
+Woodlands,Yishun,Northern & Central Heartlands,110044,3
+Woodlands,Yio Chu Kang,Northern & Central Heartlands,106240,4
+Woodlands,Orchard,CBD & Civic Core,105746,5
+Woodlands,Novena,CBD & Civic Core,102425,6
+Woodlands,Shenton Way,CBD & Civic Core,99109,7
+Woodlands,Ang Mo Kio,Northern & Central Heartlands,93397,8
+Woodlands,Raffles Place,CBD & Civic Core,91899,9
+Woodlands,Clementi,Secondary Gateways,91353,10

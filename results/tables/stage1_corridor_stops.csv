@@ -1,0 +1,21 @@
+stop_code,stop_name,group,tap_outs,from_checkpoint_trips
+45139,Kranji Stn (Woodlands Rd),Kranji,3395963,2946076
+45131,Opp Kranji Stn (Woodlands Rd),Kranji,830869,9
+46521,Marsiling Stn (Woodlands Ave 3),Marsiling,3197474,764097
+46529,Opp Marsiling Stn (Woodlands Ave 3),Marsiling,459872,0
+47009,Woodlands Temp Int (Woodlands Sq),Woodlands,1402411,882681
+46211,Johor Bahru Checkpt (Johor Bahru),JB Checkpoint,6515626,6506467
+46219,Johor Bahru Checkpt (Johor Bahru),JB Checkpoint,254243,1007
+49259,Opp TimMac @ Kranji (Kranji Loop),Industrial stops,109266,0
+49149,Aft Kranji Lk (Kranji Way),Industrial stops,105375,0
+49179,Aft Kranji Cres (Kranji Way),Industrial stops,64281,0
+46029,Aft W'lands Ind Pk D St 2 (Woodlands Rd),Industrial stops,116614,107913
+46039,Opp Kranji Lodge 1 (Woodlands Rd),Industrial stops,91328,10049
+46059,GLOBALFOUNDRIES/Aft BKE (Woodlands Rd),Industrial stops,79810,27416
+46049,GLOBALFOUNDRIES (Woodlands Rd),Industrial stops,22002,6338
+46041,Opp GLOBALFOUNDRIES (Woodlands Rd),Industrial stops,19873,1
+46541,Marsiling Mall (Woodlands Ave 3),Industrial stops,563285,23507
+46549,Blk 347 (Woodlands Ave 3),Industrial stops,244082,0
+47031,Bef Keramat Rd (Admiralty Rd West),Industrial stops,268239,0
+47029,Opp Khalsa Cres Drug Rehab Ctr (Admiralty Rd West),Industrial stops,5868,0
+47021,Khalsa Cres Drug Rehab Ctr (Admiralty Rd West),Industrial stops,4240,0
