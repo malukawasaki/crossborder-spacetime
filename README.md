@@ -51,11 +51,15 @@ All definitions (period, stop and station codes, time windows) are in
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt pytest ruff
+pip install -r requirements.txt pytest ruff   # Python 3.9-3.11
 make figures   # redraw all figures from the committed tables (no raw data needed)
 make all       # recompute every table from the raw LTA data, then draw the figures
 make test      # unit tests on synthetic data
 ```
+
+The pinned versions in `requirements.txt` reproduce the published tables and figures exactly
+and install on Python 3.9–3.11. On newer Python versions, install the package with current
+releases instead: `pip install -e ".[dev]"` (tests and `make figures` pass).
 
 `make all` needs the raw files described in [`data/README.md`](data/README.md) (about
 3 GB) and takes a few minutes.
