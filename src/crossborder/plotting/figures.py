@@ -67,7 +67,7 @@ def fig1_sector_dispersal_map():
         target = maps.merc(*config.SECTOR_COORDS[r.sector])
         ax.add_patch(FancyArrowPatch(gw_xy[r.gateway], target, connectionstyle=f"arc3,rad={ARC_BEND[r.gateway]}",
                                      color=config.SECTOR_COLOURS[r.sector], lw=lw_rail(r.trips_per_month),
-                                     arrowstyle="-", alpha=0.92, zorder=7))
+                                     arrowstyle="-", alpha=0.92, zorder=7.5 if r.sector == "Industrial East" else 7))
     for sector, lonlat in config.SECTOR_COORDS.items():
         x, y = maps.merc(*lonlat)
         ax.scatter(x, y, s=160, color=config.SECTOR_COLOURS[sector], edgecolors="white", linewidths=2, zorder=9)
