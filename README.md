@@ -117,10 +117,18 @@ records of identifiable individuals.
 
 ## Limitations
 
+- The analysis covers cross-border **bus** travel only. JB → Singapore passengers are
+  observed when they board an onward LTA bus at the Woodlands Checkpoint stop (46109),
+  where all cross-border bus services stop for immigration clearance (99.8% of bus trips
+  from the JB Checkpoint stop end there).
+- Commuters who cross by train (Shuttle Tebrau), on foot, by motorcycle or by car are not
+  captured. Some of them board LTA buses at other stops near the checkpoint, for example
+  service 856 from the Woodlands Train Checkpoint stop (46069), which is outside the scope
+  of this analysis.
 - The LTA datasets are monthly aggregates of fare-card taps. They do not identify
   nationality or residence, so cross-border travellers are identified by where they board
-  (the checkpoint stops), not by who they are. Travellers who cross by car, motorcycle,
-  private shuttle or on foot, and those who pay without a card tap, are not in the data.
+  (the checkpoint stops), not by who they are. Passengers who pay without a card tap are
+  not in the data.
 - Bus origin–destination pairs record boarding and alighting stops of one bus leg; they do
   not link onward rail trips to the same person. Stage 2 counts **all** passengers tapping
   in at the gateway stations in the morning peak, of whom cross-border commuters are a
