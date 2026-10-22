@@ -73,7 +73,7 @@ COORDS = {
     "JB CIQ": (103.7632, 1.4621),
     "Woodlands Checkpoint": (103.7637, 1.4477),
     "JB Home": (103.7578, 1.4655),
-    "Kranji MRT": (103.7179, 1.4252),
+    "Kranji MRT": (103.7621, 1.4250),
     "Orchard": (103.8318, 1.3040),
 }
 # Industrial cluster positions are the mean of their bus-stop coordinates (data/reference/bus_stops.csv).
