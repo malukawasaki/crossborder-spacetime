@@ -11,7 +11,10 @@ from .style import save
 
 GATEWAY_STATION_NAME = {"Kranji": "Kranji", "Marsiling": "Marsiling", "Woodlands": "Woodlands"}
 ARC_BEND = {"Kranji": -0.12, "Marsiling": -0.24, "Woodlands": 0.12}
-LW_MAX = 11.0  # line width (pt) of the largest flow on Figure 1
+# Figure 1 line widths: one linear scale for bus flows and one for rail flows (pt per monthly trip).
+LW_BUS_MAX = 16.0   # width of the Causeway trunk (largest bus flow)
+LW_RAIL_MAX = 10.0  # width of the largest gateway-to-sector rail flow
+LW_MIN = 1.0        # minimum width so that the smallest flows stay visible
 
 
 def _hour_axis(ax):
@@ -33,10 +36,14 @@ def fig1_sector_dispersal_map():
     trunk = float(crossings.query("direction == 'JB -> SG' and day_type == 'ALL'").trips_per_month.iloc[0])
     feeders = split.query("day_type == 'ALL'").set_index("destination_group").trips_per_month
     pairs = sectors[(sectors.gateway != "Total") & (sectors.sector != "Other")]
-    scale = LW_MAX / trunk  # one linear scale (pt per monthly trip) for every line on the map
+    bus_scale = LW_BUS_MAX / trunk
+    rail_scale = LW_RAIL_MAX / pairs.trips_per_month.max()
 
     def lw(v):
-        return max(0.6, v * scale)
+        return max(LW_MIN, v * bus_scale)
+
+    def lw_rail(v):
+        return max(LW_MIN, v * rail_scale)
 
     fig, ax = plt.subplots(figsize=(17, 9.5))
     maps.add_landuse(ax)
@@ -59,7 +66,7 @@ def fig1_sector_dispersal_map():
     for _, r in pairs.sort_values("trips").iterrows():
         target = maps.merc(*config.SECTOR_COORDS[r.sector])
         ax.add_patch(FancyArrowPatch(gw_xy[r.gateway], target, connectionstyle=f"arc3,rad={ARC_BEND[r.gateway]}",
-                                     color=config.SECTOR_COLOURS[r.sector], lw=lw(r.trips_per_month),
+                                     color=config.SECTOR_COLOURS[r.sector], lw=lw_rail(r.trips_per_month),
                                      arrowstyle="-", alpha=0.92, zorder=7))
     for sector, lonlat in config.SECTOR_COORDS.items():
         x, y = maps.merc(*lonlat)
@@ -79,7 +86,7 @@ def fig1_sector_dispersal_map():
     ax.set_aspect("equal")
     maps.add_basemap(ax)
 
-    ref = 100_000
+    bus_ref, rail_ref = 100_000, 50_000
     legend = [
         Line2D([0], [0], color="#b91c1c", lw=4, label=f"Causeway bus crossings JB → SG ({trunk / 1e3:,.0f}k/month)"),
         Line2D([0], [0], marker="o", color="w", markerfacecolor="#991b1b", markersize=10, label="JB CIQ"),
@@ -92,7 +99,9 @@ def fig1_sector_dispersal_map():
           for s, c in config.SECTOR_COLOURS.items() if s != "Other"],
         Line2D([0], [0], marker="s", color="w", markerfacecolor="#0f172a", markersize=10,
                label="Gateways: A Kranji, B Marsiling, C Woodlands"),
-        Line2D([0], [0], color="#64748b", lw=lw(ref), label=f"Line width key: {ref / 1e3:,.0f}k trips/month"),
+        Line2D([0], [0], color="#64748b", lw=lw(bus_ref), label=f"Width key, bus: {bus_ref / 1e3:,.0f}k trips/month"),
+        Line2D([0], [0], color="#64748b", lw=lw_rail(rail_ref),
+               label=f"Width key, rail (weekday AM peak): {rail_ref / 1e3:,.0f}k trips/month"),
         *[Patch(facecolor=c, alpha=0.55, label=f"MP2019: {k}") for k, c in config.LANDUSE_COLOURS.items()],
     ]
     ax.legend(handles=legend, fontsize=7.5, loc="upper left", bbox_to_anchor=(0.015, 0.98), framealpha=0.95,

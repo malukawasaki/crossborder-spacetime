@@ -19,8 +19,9 @@ cross-border commuters, visualised as Hägerstrand space-time lines.
 Bus crossings from JB into Singapore (red), the first bus leg from Woodlands Checkpoint to
 the three gateway MRT stations A Kranji, B Marsiling and C Woodlands (dashed) or directly
 to industrial-area stops (purple triangles), and weekday morning-peak rail trips from the
-gateways to five functional sectors, over URA Master Plan 2019 land use. All line widths use
-one linear scale (trips per month), computed from the tables.
+gateways to five functional sectors, over URA Master Plan 2019 land use. Line widths are
+proportional to trips per month, computed from the tables: bus flows and rail flows each use
+their own linear scale (see the width keys in the legend), with a minimum width of 1 pt.
 
 ## Figure 2 — Visualising time poverty
 
